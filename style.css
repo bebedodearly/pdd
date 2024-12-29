@@ -1,0 +1,253 @@
+:root {
+  --color-1: rgb(255, 255, 255);
+  --color-2: rgb(248, 185, 234);
+  --color-3: rgb(252, 170, 177);
+  --color-4: rgb(211, 50, 157);
+  --color-5: rgb(201, 43, 122);
+  --color-6: rgb(197, 8, 33);
+  --color-7: rgb(139, 0, 0);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;  
+  justify-content: flex-start;  
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--color-2);
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#logo {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  margin: 0 auto; 
+}
+
+  nav ul {
+  display: flex; 
+  justify-content: center; 
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  gap: 20px; 
+  }
+  
+  nav li {
+  margin: 0; 
+  }
+  
+  nav a {
+  text-decoration: none; 
+  color: var(--color-7); 
+  font-family: "Pompiere", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px; 
+  }
+  
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+}
+
+h1 {
+  font-family: "Slabo 27px", serif;
+  color: var(--color-5);
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+p, section {
+  font-family: "Pompiere", serif;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--color-7);
+}
+
+.main-section img {
+  width: 300px; 
+  height: auto; 
+  margin: 0 auto; 
+}
+
+.section main-contador {
+  font-family: "Slabo 27px", serif;  
+  box-sizing: border-box;
+  background-color: var(--color-1);
+  margin: 0;
+  padding: 0;
+}
+
+
+#main-contador {
+  background-color: var(--color-1);
+  color: var(--color-7);
+  text-align: center;
+  box-shadow: 0 4px 8px var(--color-5);
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;  
+  margin: 20px auto; 
+  text-align: center;
+  font-size: 18px;
+}
+
+#main-contador h2 {
+  font-family: "Slabo 27px", serif;
+  color: var(--color-6);
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+
+#tempo {
+  font-family: "Slabo 27px", serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-7);
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.quadrado {
+  background-color: var(--color-2);
+  color: var(--color-7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.quadrado span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+ul {
+  font-family: 'Work Sans', sans-serif;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  background-color: var(--color-3);
+  margin: 30px;
+  padding: 0;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: var(--color-4);
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  align-content: center;
+  width: 100%;
+  overflow: hidden;
+  max-width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--color-7);
+  margin: 50px auto;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  overflow: hidden;
+  min-width: 100%;
+  height: auto;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-button {
+  position: absolute;
+  color: var(--color-1);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#footer {
+  color: var(--color-6);
+  margin-top: auto; 
+  text-align: center;
+  background-color: var(--color-3);
+  display: flex;
+  width: 100%;
+  bottom: 0;
+  font-size: 14px;
+  line-height: 28px;
+  padding: 10px;
+}
+
+#footer a {
+  font-family: 'Work Sans', sans-serif;
+  text-decoration: none;
+  color: var(--color-7);
+  font-weight: bold;
+  margin: 0 120px;
+}
